@@ -11,6 +11,7 @@ terminalu przeładunkowego dla statków transportowych przystosowanych do przewo
 Aplikacja bedzie słuzyła do załadunku i rozładunku kontenerów z/na statek. W przypadku
 rozładunku kontenery moga trafic do magazynu lub bezposrednio na wagon transportowy.
 Kazdy statek ma inna pojemnosc i nosnosc definiowana przez:
+
 • maksymalna liczbe kontenerów z ładunkiem toksycznym lub wybuchowym mozliwych do
 załadowania w ramach statku
 • maksymalna liczbe ciezkich kontenerów
@@ -27,8 +28,11 @@ miejsc na kontenery z materiałem wybuchowym lub toksycznym, to miejsca te moga 
 odpowiednio przez:
 
 • 3 kontenery z materiałami wybuchowymi
+
 • 2 kontenery z materiałami wybuchowymi i 1 kontener z materiałami toksycznymi
+
 • 1 kontener z materiałami wybuchowymi i 2 kontenery z materiałami toksycznymi
+
 • 3 kontenery z materiałami toksycznymi
 
 Kazdy z typów kontenerów posiada inny zestaw cech (np. nadawca, tara, zabezpieczenia,
