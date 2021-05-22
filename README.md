@@ -42,12 +42,18 @@ wszystkie typy kontenerów. Dodatkowo kazdy kontener posiada swój unikatowy num
 nadawany automatycznie podczas tworzenia obiektu.
 
 Mamy do dyspozycji miedzy innymi:
+
 • kontener podstawowy,
+
 • kontener ciezki, bedacy rodzajem kontenera podstawowego,
+
 • kontener chłodniczy, bedacy rodzajem kontenera ciezkiego, wymagajacy podłaczenia do
 sieci elektrycznej statku
+
 • kontener na materiały ciekłe, bedacy rodzajem kontenera podstawowego
+
 • kontener ma materiały wybuchowe, bedacy rodzajem kontenera ciezkiego
+
 • kontener na materiały toksyczne, bedacy rodzajem kontenera ciezkiego, który dostepny
 jest w dwóch wersjach: kontener na toksyczne materiały sypkie oraz kontener na ciekłe
 materiały toksyczne, który nie tylko jest rodzajem kontenera ciezkiego, ale równiez posiada
@@ -94,10 +100,14 @@ tenera z magazynu i załadowanie na wskazany statek, sprawdzenie aktualnego stan
 wyswietlenie zawartosci magazynu oraz manualna utylizacje wskazanego kontenera.
 Nalezy zapewnic trwałosc aplikacji, tj. umozliwic zapis aktualnego stanu całego portu do
 pliku tekstowego (z uwzglednieniem wszystkich informacji z aplikacji, takich jak m.in. dane
-nadawców, statków, magazynu, kontenerów oraz kompletu informacji o nich). Zapisane w pliku
+nadawców, statków, magazynu, kontenerów oraz kompletu informacji o nich). 
+Zapisane w pliku
 powinny byc zapisane przejrzyscie i czytelnie dla człowieka z zachowaniem ponizszych reguł:
+
 • Kontenery znajdujace sie na statkach powinny byc posortowane rosnaco według wagi.
+
 • Statki powinny byc posortowane malejaco wzgledem nazwy statku
+
 • Kontenery magazynowane powinny byc posortowane malejaco Wzgledem daty rozpoczecia
 magazynowania (od najdłuzej magazynowanych do najkrócej), a w sytuacji, gdy czas
 magazynowania bedzie taki sam, to kolejnym kryterium sortujacym jest nazwa nadawcy.
@@ -107,18 +117,29 @@ aby mozna było rozpoczac prace od ostatniego zapisanego stanu.
 W programie nalezy obsłuzyc wszystkie powstajace wyjatki i odpowiednio zakomunikowac
 uzytkownikowi nastepujaca sytuacje bez potrzeby przerywania u uruchamiania na nowo programu.
 Zasada działania programu:
+
 • W metodzie main nalezy utworzyc port z co najmniej piecioma statkami róznego róznego
 rodzaju załadowanymi róznymi kontenerami. Dodatkowo nalezy w magazynie umiescic
 kilka kontenerów róznego typu i rodzaju.
+
 • Po uruchomieniu programu, uzytkownik powinien miec mozliwosc za posrednictwem konsoli
 polecen wywołania wszystkich wspomnianych funkcjonalnosci. Sa to m.in:
+
 – Zakonczenia programu w dowolnym momencie
+
 – Zładowania wskazanego kontenera ze statku na wagon kolejowy/do magazynu
+
 – Załadowania na wskazany statek wskazanego kontenera
+
 – Czytelnego wypisania informacji o statku i znajdujacych sie na nim kontenerach
+
 – Czytelnego wyswietlenia stanu magazynowego wraz z czasami pozostałymi do utylizacji
 kontenerów przechowujacych materiały wybuchowe lub materiały toksyczne
+
 – Utylizacji wskazanego kontenera z magazynu
+
 – Stworzenia nowego statku o wskazanych parametrach
+
 – Stworzenia nowego kontenera wskazanego typu o wskazanych parametrach
+
 – wykonania polecenia zapisujacego aktualny stan portu
