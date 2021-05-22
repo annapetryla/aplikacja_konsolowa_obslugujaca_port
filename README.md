@@ -73,22 +73,30 @@ pomiescic 10 kontenerów. Po zapełnieniu tego, nalezy odczekac 30 sekund na odj
 składu i przyjazd kolejnego.
 
 Magazyn przeładunkowy posiada pewna ograniczona liczbe kontenerów jakie moze pomiescic,
-definiowana podczas tworzenia obiektu typu Magazyn. W ramach magazynu wolno przechowywac
+definiowana podczas tworzenia obiektu typu Magazyn.
+
+W ramach magazynu wolno przechowywac
 kazdy typ kontenera, jednak z zastrzezeniem, iz kontenery z materiałami wybuchowymi
 moga byc magazynowane jedynie przez 5 dni, kontenery z płynnymi materiałami toksycznymi
 przez 10 dni, zas kontenery z sypkimi materiałami toksycznymi maksymalnie przez przez 14 dni.
+
 W zwiazku z powyzszym, nalezy zaimplementowac mechanizm upływajacego czasu za posrednictwem
-watków. Watek powinien co 5 sekund przesuwac date o 1 dzien do przodu, symulujac
+watków.
+
+Watek powinien co 5 sekund przesuwac date o 1 dzien do przodu, symulujac
 upływ czasu. Równolegle powinny byc sprawdzane kwestie magazynowe i w przypadku,
 gdyby magazynowany kontener przekraczałby maksymalny czas magazynowania, zostawałby on
 w zwiazku z decyzjami celniczymi dot. bezpieczenstwa składowania i magazynowania towarów
 utylizowany poprzez wywiezienie z terenu portu, a nastepnie zapomniany z punku widzenia aplikacji.
+
 Równiez nalezy zaimplementowac odliczanie 30 sekund po zapełnieniu składu kolejowego
 do przyjazdu kolejnego składu, umozliwiajacego dalsze rozładowywanie kontenerów na wagony.
+
 W sytuacji, gdy kontener zostanie zutylizowany, nadawca otrzymuje ostrzezenie w postaci
 obiektu wyjatku typu IrresponsibleSenderWithDangerousGoods zawierajacego informacje
 dot. kontenera, tj. daty przybycia do magazynu, daty utylizacji oraz unikalnego numeru
-identyfikacyjnego). W przypadku, gdy nadawca uzbiera w ramach dostaw dwa ostrzezenia, to
+identyfikacyjnego).
+W przypadku, gdy nadawca uzbiera w ramach dostaw dwa ostrzezenia, to
 w przypadku kolejnych kontenerów wymagajacych magazynowania, takowy towar nie zostanie
 przyjety i zostanie ma statku transportowym z nakazem odesłania do nadawcy.
 Nadawca posiada ponad wymienione wczesniej informacje takie dane jak imie, nazwisko, pesel,
