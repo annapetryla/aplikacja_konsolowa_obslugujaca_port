@@ -17,6 +17,7 @@ załadowania w ramach statku
 • maksymalna liczbe kontenerów wymagajacych podłaczenia do sieci elektrycznej
 • maksymalna liczba wszystkich kontenerów
 • maksymalna ładownosc wagowa statku
+
 Dodatkowo kazdy statek posiada podstawowe informacje o sobie (nazwe, port macierzysty,
 lokalizacja zródłowa transportu oraz docelowa). Kazdy statek równiez posiada swój unikatowy
 numer identyfikacyjny nadawany automatycznie podczas tworzenia obiektu.
@@ -24,15 +25,18 @@ W przypadku ładownosci kontenerów toksycznych i wybuchowych - wartosc ta jest 
 dla obu typów kontenerów, co oznacza, iz jesli w statku zdefiniowano np. w przypadku trzech
 miejsc na kontenery z materiałem wybuchowym lub toksycznym, to miejsca te moga byc załadowane
 odpowiednio przez:
+
 • 3 kontenery z materiałami wybuchowymi
 • 2 kontenery z materiałami wybuchowymi i 1 kontener z materiałami toksycznymi
 • 1 kontener z materiałami wybuchowymi i 2 kontenery z materiałami toksycznymi
 • 3 kontenery z materiałami toksycznymi
+
 Kazdy z typów kontenerów posiada inny zestaw cech (np. nadawca, tara, zabezpieczenia,
 waga netto, waga brutto, informacje o certyfikatach, itp.). W przypadku kazdego typu kontenera
 nalezy wymyslic co najmniej jedna niepowtarzajaca sie i unikalna ceche na wskros przez
 wszystkie typy kontenerów. Dodatkowo kazdy kontener posiada swój unikatowy numer identyfikacyjny
 nadawany automatycznie podczas tworzenia obiektu.
+
 Mamy do dyspozycji miedzy innymi:
 • kontener podstawowy,
 • kontener ciezki, bedacy rodzajem kontenera podstawowego,
@@ -44,16 +48,20 @@ sieci elektrycznej statku
 jest w dwóch wersjach: kontener na toksyczne materiały sypkie oraz kontener na ciekłe
 materiały toksyczne, który nie tylko jest rodzajem kontenera ciezkiego, ale równiez posiada
 cechy kontenera na materiały ciekłe.
+
 W ramach statku jestesmy ograniczeni nie tylko maksymalna liczba kontenerów, ale równiez
 maksymalna ładownoscia wagowa statku, w zwiazku z czym przed załadowaniem kolejnego
 kontenera musimy byc pewni, czy kolejny ładunek nie przekroczy dopuszczalnej bezpiecznej nosnosci
 statku.
+
 W ramach aplikacji musimy miec mozliwosc z poziomu menu stworzenia nowego statku oraz
 kontenerów kazdego typu, załadowania kontenera na statek oraz rozładowania kontenera na
 wagon lub do magazynu.
+
 W sytuacji, gdy rozładowujemy kontener ma wagon kolejowy, zakładamy, ze jeden skład moze
 pomiescic 10 kontenerów. Po zapełnieniu tego, nalezy odczekac 30 sekund na odjazd aktualnego
 składu i przyjazd kolejnego.
+
 Magazyn przeładunkowy posiada pewna ograniczona liczbe kontenerów jakie moze pomiescic,
 definiowana podczas tworzenia obiektu typu Magazyn. W ramach magazynu wolno przechowywac
 kazdy typ kontenera, jednak z zastrzezeniem, iz kontenery z materiałami wybuchowymi
